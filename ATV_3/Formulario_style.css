@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoi UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(150deg,#ffffff,0%,#111 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-box{
+    background: #ebecd0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #434241;
+    width: 400px;
+}
+
+h1{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+ 
+input{
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border: 2px solid #dad8d6;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(217, 217, 189);
+    box-shadow: 0 0 10px #666564;
+}
+
+.input-formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-formulario select{
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border: 2px solid #dad8d6;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.input-formulario input{
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border: 2px solid #dad8d6;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.input-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24.5px;
+}
+
+.input-cadastro select{
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border: 2px solid #dad8d6;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.input-cadastro input{
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border: 2px solid #dad8d6;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaço entre as divs */
+    align-items: flex-start; /* Alinha as divs no topo */
+    gap: 20px; /* Espaçamento entre as divs */
+}
+
+.Formulario-box, .Cadastra-box {
+    width: 48%; /* Define a largura de cada div para caber lado a lado */
+    background: #ebecd0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #434241;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255,255,255);
+    color: #312e2b;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+button:hover{
+    background: #a2d1fa;
+}

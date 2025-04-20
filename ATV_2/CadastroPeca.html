@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <!-- Criar formulario para cadastro de peças (tipo de peca, tamanho da peca,
+    peso, classificação risco, validade)-->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Cadastro_Peca</title>
+    <link rel="stylesheet" href="CadastroPeca_style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cadastro-box">
+            <h1>Cadastro Peças</h1>
+            <form id="cadasro-peca">
+                <!--tipo peça-->
+                <div class="input-cadastro">
+                    <label for="tipoPeca">Tipo de Peça</label>
+                    <input type="text" id="tipoPeca" placeholder="Digite o tipo da peça" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <!--tamanho peça-->
+                <div class="input-cadastro">
+                    <label for="tamanhoPeca">Tamanho da Peça (m)</label>
+                    <input type="text" id="tamanhoPeca" placeholder="Digite o tamanho da peça (m)" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <!--peso peça-->
+                <div class="input-cadastro">
+                    <label for="pesoPeca">Peso da Peça (g)</label>
+                    <input type="text" id="pesoPeca" placeholder="Digite o peso da peça (g)" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <!--classificação risco 1 á 4-->
+                <div class="input-cadastro">
+                    <label for="classificacaoRisco">Classificação de Risco 1-4</label>
+                    <input type="number" id="classificacaoRisco" placeholder="Digite a classificação de risco" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <!--validade-->
+                <div class="input-cadastro">
+                    <label for="validade">Validade (mês)</label>
+                    <input type="text" id="validade" placeholder="Digite a validade (mês)" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <button class="submit">Concluir Cadastro</button>
+
+            </form>
+                <div id="mensagem"></div>
+        </div>
+    </div>
+    <script src="CadastroPeca_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!--Arthur Soares, Guilherme César, Guilherme Oliveira-->
+    <!--Rua, Bairro, Cidade, Estado, Pais, Tel, Email, Senha, Conf senha-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cadastro-box">
+            <h1>Cadastro</h1>
+            <form id="cadastro">
+
+                <div class="input-group">
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="rua" placeholder="Rua" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                
+                <div class="input-group">
+                    <label for="Bairro">Bairro:</label>
+                    <input type="text" id="bairro" placeholder="Bairro" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="Estado">Estado:</label>
+                    <input type="text" id="estado" placeholder="Estado" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                
+                <div class="input-group">
+                    <label for="Pais">País:</label>
+                    <input type="text" id="pais" placeholder="País" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                    
+                <div class="input-group">
+                    <label for="numTelefone">Telefone:</label>
+                    <input type="text" id="telefone" maxlength="15" placeholder="(00) 00000-0000" 
+                    pattern="\(\d{2}\)\s?\d{5}\-\d{4}" title="Formato: (00) 00000-0000" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="email@gmail.com"
+                    required>
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha"
+                     placeholder="********" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="eye" onclick="togglePassword('senhaCadrastro')"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" 
+                    placeholder="********" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="eye" onclick="togglePassword(confirmarSenha)"></span>
+                </div>
+
+                <div class="button-container">
+                <button id="save-button">Salvar</button>
+                <button id="login-button">Login</button>
+                </div>
+
+            </form>
+            <div id="mensagem"></div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--6-Criar formulario de consulta de intens hospitalares 
+Form lista (tipo de item, esterelização"tempo", medico"NOME")
+Cadastro(tipo item, nome, esterelização, Usuabilidade"medico, enfermeiro")-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form e Cadastro de intes hospitalares</title>
+    <link rel="stylesheet" href="Formulario_style.css">
+
+</head>
+<body>
+    <div class="container">
+        
+        <!--Formulario de consulta de itens-->
+
+        <div class="Formulario-box">
+            <h1>Formulario de Item</h1>
+            <form id="Formulario">
+                
+                <!--Tipo de item-->
+                <div class="input-formulario">
+                    <label for="tipoItem">Tipo de Item</label>
+                    <select id="tipoItem" required>
+                        <option value="AparelhosdeDiagnóstico">Aparelhos de diagnóstico</option>
+                        <option value="EquipamentosdeTratamento">Equipamentos de tratamento</option>
+                        <option value="EquipamentosdeSuportedeVida">Equipamentos de suporte de vida</option>
+                        <option value="MobiliárioHospitalar">Mobiliário hospitalar</option>
+                        <option value="EquipamentosEletrônicos">Equipamentos eletrônicos</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <!--nome item-->
+                <div class="input-formulario">
+                    <label for="nomeItem">Nome do Item</label>
+                    <input type="text" id="nomeItem" placeholder="Digite o nome do item" required>
+                    <i class="fa-solid fa-user"></i>
+                </div> 
+
+                <!--esterelização (m)-->
+                <div class="input-formulario">
+                    <label for="esterelizacao">Esterelização (minuto)</label>
+                    <input type="number" id="esterelizacao" placeholder="Digite o tempo de esterelização" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <!--usuabilidade-->
+                <div class="input-formulario">
+                    <label for="usuabilidade">Usuabilidade</label>
+                    <select id="usuabilidade" required>
+                        <option value="MedicoG">Médicos generalistas</option>
+                        <option value="MedicoE">Médicos especialistas</option>
+                    </select>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <button class="submit">Consultar</button>
+                
+            </form>
+        </div>
+
+        <!--Cadastro de Itens-->
+
+        <div class="Cadastra-box">
+            <h1>Cadastro de Item</h1>
+            <form id="Cadastro">
+                    
+                    <!--tipo de item-->
+                    <div class="input-cadastro">
+                        <label for="tipoItem">Tipo de Item</label>
+                        <select id="tipoItem" required>
+                            <option value="AparelhosdeDiagnóstico">Aparelhos de diagnóstico</option>
+                            <option value="EquipamentosdeTratamento">Equipamentos de tratamento</option>
+                            <option value="EquipamentosdeSuportedeVida">Equipamentos de suporte de vida</option>
+                            <option value="MobiliárioHospitalar">Mobiliário hospitalar</option>
+                            <option value="EquipamentosEletrônicos">Equipamentos eletrônicos</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+    
+                    <!--nome item-->
+                    <div class="input-cadastro">
+                        <label for="nomeItem">Nome do Item</label>
+                        <input type="text" id="nomeItem" placeholder="Digite o nome do item" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+    
+                    <!--esterelização-->
+                    <div class="input-cadastro">
+                        <label for="esterelizacao">Esterelização (minuto)</label>
+                        <input type="number" id="esterelizacao" placeholder="Digite o tempo de esterelização" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+    
+                    <!--usuabilidade-->
+                    <div class="input-cadastro">
+                        <label for="usuabilidade">Usuabilidade</label>
+                        <select id="usuabilidade" required>
+                            <option value="MedicoG">Médicos generalistas</option>
+                            <option value="MedicoE">Médicos especialistas</option>
+                        </select>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+    
+                    <button class="submit">Concluir Cadastro</button>
+
+            </form>
+            <div id="mensagem"></div>
+        </div>
+    </div>
+<script src="Formulario_script.js"></script>
+</body>
+</html>
