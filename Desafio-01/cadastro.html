@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="cadastro-box">
+            <h1>Cadastro</h1>
+            <form id="cadastro">
+
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="numTelefone">Telefone:</label>
+                    <input type="text" id="numTelefone" maxlength="15" placeholder="(00) 00000-0000" 
+                    pattern="\(\d{2}\)\s?\d{5}\-\d{4}" title="Formato: (00) 00000-0000" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="senhaCadrastro">Senha:</label>
+                    <input type="password" id="senhaCadrastro"
+                     placeholder="********" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="eye" onclick="togglePassword('senhaCadrastro')"></span>
+                </div>
+
+                <div class="button-group">
+                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="window.location.href='login.html'">Login</button>
+                <button type="button" onclick="window.location.href='cad-anormalidade.html'">A</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

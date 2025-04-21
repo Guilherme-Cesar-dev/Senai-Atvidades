@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Anormalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="anormalidade-box">
+            <h1>Cadastro de Anormalidade</h1>
+            <form id="anormalidade">
+               
+                <div class="input-group">
+                    <label for="descricao">Descreva:</label>
+                    <input type="text" id="descricao" placeholder="Digite a anormalidade" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-group">
+                    <label for="imagem">Imagem:</label>
+                    <input type="file" id="imagem" accept="image/*" placeholder="Envie uma imagem" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <button type="submit">Cadastrar Anormalidade</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

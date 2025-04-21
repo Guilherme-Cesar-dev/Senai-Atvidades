@@ -62,7 +62,7 @@ input{
     transition: all 0.3s;
 }
 
-.fa-envelope, fa-lock{
+.fa-envelope, .fa-lock{
     position: absolute;
     right: 40px;
     top: 38px;

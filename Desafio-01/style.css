@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(150deg,#F5EEDD,0%,#7AE2CF 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box,.cadastro-box,.anormalidade-box,.recuperar-box{
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(20, 21, 46, 0.367);
+    width: 400px;
+    display: inline-block;
+}
+
+h1{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    display: block;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 2px solid #dad8d6;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus{
+    border-color: #2e004c;
+    box-shadow: 0 0 5px rgba(46, 0, 76, 0.5);
+}
+
+label{
+    display: flex;
+    margin-bottom: 4px;
+    color: #06202B;
+    font-weight: 300;
+    transition: 500;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.fa-envelope,.fa-lock,.fa-user{
+    position: absolute;
+    left: 10px;
+    color: #2e004c;
+    font-size: 1.2em;
+}
+
+.eye{
+    position: absolute;
+    right: 10px;
+    color: #2e004c;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    background: #077A7D;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+button:hover{
+    background: #235970;
+    box-shadow: 0 0 5px #06202B;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    text-align: center;
+}
+
+p{
+    text-decoration: none;
+    color: #008986;
+    font-size: 0.9em;
+    transition: all 0.3s ease-in-out;
+}
+
+.p-group{
+    padding: auto;
+    gap: 5px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #00c0bd;
+    font-size: 0.9em;
+    transition: all 0.3s ease-in-out;
+
+}
