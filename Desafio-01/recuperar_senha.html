@@ -21,9 +21,16 @@
                     <input type="email" id="email" placeholder="Digite seu e-mail" required>
                 </div>
 
+                <div class="input-group">
+                    <label for="senha">Nova Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite sua nova senha" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="eye" onclick="togglePassword('senha')"></span>
+                </div>
+
                 <div class="button-group">
-                <button type="submit">Enviar</button>
-                <button type="button" onclick="window.location.href='login.html'">Voltar para o Login</button>
+                    <button type="submit">Enviar</button>
+                    <button type="button" onclick="window.location.href='login.html'">Voltar para o Login</button>
                 </div>
             </form>
         </div>

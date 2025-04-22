@@ -25,41 +25,22 @@
             </div>
 
             <div class="input-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="senha" placeholder="********" required>
-                <i class="fa-solid fa-lock"></i>
-                <span class="eye" onclick="togglePassword()">
-                </span>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="********" required>
             </div>
 
-        
-                <button type="submit" id="entrar" onclick= "logar()">Entrar</button>
+            <button type="submit" id="entrar" onclick= "logar()">Entrar</button>
 
-                <div class="p-group">
+            <div class="p-group">
                 <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
                 <p ><a href="recuperar_senha.html">Esqueceu a senha?</a></p>
-                </div>
+            </div>
 
             </form>
         </div>
     </div>
     <script>
-    
-function logar(){
 
-event.preventDefault();
-
-var nome = document.getElementById("nome").value; 
-var email = document.getElementById("email").value;
-var senha = document.getElementById("password").value;
-
-if(nome === "a" && email === "a@gmail.com" && senha === "1") {
-    window.location.assign("cad-anormalidade.html");
-}else{
-    alert("Acesso Negado")
-}
-
-}
     </script>
     <script src="script.js"></script>
 </body>
