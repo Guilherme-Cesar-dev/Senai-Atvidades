@@ -11,7 +11,3 @@ Se Cadastrar
 Cadastrar a anormalidade encontrada 
 3.TELA  DE CADASTRO ANORMALIDADE
     descrição da anormalidade, onde ocorreu, imagem (enviar)
-
-nome: a 
-email: a@gmail.com
-senha: 1 
